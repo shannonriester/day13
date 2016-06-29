@@ -10,20 +10,22 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-  ul li {
-    background: #E5E5E5;
-    color: #797979;
-    border: solid #C9C9C9 .1em;
-    margin: 0;
-    padding: 0; }
-  ul li:first-child {
-    background: #616368;
-    color: #FDFDFD; }
-    ul li:first-child:hover {
-      background: #94BB3F;
-      color: #3E5706; }
-    ul li:first-child:active {
-      background: #94BB3F;
-      color: #3E5706; }
+
+li {
+  background: #E5E5E5;
+  color: #797979;
+  border: solid #C9C9C9 .1em;
+  margin: 0;
+  padding: 0; }
+
+li:first-child {
+  background: #616368;
+  color: #FDFDFD; }
+  li:first-child:hover {
+    background: #94BB3F;
+    color: #3E5706; }
+  li:first-child.active {
+    background: #94BB3F;
+    color: #3E5706; }
 
 /*# sourceMappingURL=main.css.map */
