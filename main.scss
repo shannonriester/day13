@@ -1,0 +1,40 @@
+@import 'variables';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#contentBox {
+  width: 40%;
+  border: solid #444445 .5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    background: $list-background;
+    color: $list-text;
+    border: solid #C9C9C9 .1em;
+    margin: 0;
+    padding: 0;
+  }
+
+  li:first-child {
+    background: $folder-background;
+    color: $folder-titles;
+
+    &:hover {
+      background: $hover-background;
+      color: $hover-titles;
+    }
+
+    &:active {
+      background: $hover-background;
+      color: $hover-titles;
+    }
+  }
+}
