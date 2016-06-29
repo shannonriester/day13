@@ -32,7 +32,7 @@ li:first-child {
       color: $hover-titles;
     }
     &.active {
-      background: $hover-background;
-      color: $hover-titles;
+        background: $hover-background;
+        color: $hover-titles;
+      }
   }
-}

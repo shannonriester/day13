@@ -21,33 +21,52 @@ var $directory3 = $('<li>Connect</li><li>Profile</li><li>Options</li><li>Images<
     $li1.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
         // $(evt.target).toggleClass('hidden');
-        $(this).addClass('active');
+        $li1.toggleClass('active');
         $ul1.append($directory1);
+
         $directory2.remove();
         $directory3.remove();
+
+        $li2.removeClass('active');
+        $li3.removeClass('active');
+        $li4.removeClass('active');
 
     });
     $li2.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
-        $(this).addClass('active');
+        $li2.toggleClass('active');
         $ul2.append($directory2);
+
         $directory1.remove();
         $directory3.remove();
+
+        $li1.removeClass('active');
+        $li3.removeClass('active');
+        $li4.removeClass('active');
     });
     $li3.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
-        $(this).addClass('active');
+        $li3.toggleClass('active');
         $ul3.append($directory3);
+
         $directory1.remove();
         $directory2.remove();
+
+        $li1.removeClass('active');
+        $li2.removeClass('active');
+        $li4.removeClass('active');
     });
     $li4.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
-        $(this).addClass('active');
+        $li4.toggleClass('active');
         $ul4.append($directory4);
+
         $directory1.remove();
         $directory2.remove();
         $directory3.remove();
-    });
 
-var $defaultView =
+        $li1.removeClass('active');
+        $li2.removeClass('active');
+        $li3.removeClass('active');
+
+    });
