@@ -1,28 +1,30 @@
 var $li = $('li');
 
-var $ul1 = $('#ul1');
+var $ol1 = $('#ol1');
 var $li1 = $('#li1');
 
-var $ul2 = $('#ul2');
+var $ol2 = $('#ol2');
 var $li2 = $('#li2');
 
-var $ul3 = $('#ul3');
+var $ol3 = $('#ol3');
 var $li3 = $('#li3');
 
-var $ul4 = $('#ul4');
+var $ol4 = $('#ol4');
 var $li4 = $('#li4');
 
-var $directory1 = $('<li>Dropbox</li><li>Skydrive</li><li>FTP Server</li><li>Dropbox</li><li>Push</li>');
-var $directory2 = $('<li>Inbox</li><li>Outbox</li><li>Sent</li><li>Trash</li><li>Folders</li>');
-var $directory3 = $('<li>Connect</li><li>Profile</li><li>Options</li><li>Images</li><li>Push</li>');
+var $directory1 = $('<li><span>01</span> Dropbox <p class="rightNum">42</p></li><li><span>02</span> Skydrive<p class="rightNum">87</p></li><li><span>03</span> FTP Server <p class="rightNum">366</p></li><li><span>04</span> Dropbox <p class="rightNum">1</p></li><li><span>05</span> Push<p class="rightNum">10</p></li>');
+var $directory2 = $('<li><span>01</span> Inbox <p class="rightNum">0</p></li><li><span>02</span> Outbox <p class="rightNum">1158</p></li><li><span>03</span> Sent <p class="rightNum">222</p></li><li><span>04</span> Trash <p class="rightNum">empty</p></li><li><span>05</span> Folders <p class="rightNum">58</p></li>');
+var $directory3 = $('<li><span>01</span> Connect <p class="rightNum">12</p></li><li><span>01</span> Profile <p class="rightNum">19</p></li><li><span>02</span> Options <p class="rightNum">27</p></li><li><span>03</span> Images <p class="rightNum">17</p></li><li><span>04</span> Push <p class="rightNum">10</p></li>');
+
+//create var for ul1.append($directory1) so that you can add transitions
 
 
   //when 'My Files' is clicked, make the li sub directory drop down...
     $li1.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
         // $(evt.target).toggleClass('hidden');
-        $li1.toggleClass('active');
-        $ul1.append($directory1);
+        $li1.addClass('active');
+        $ol1.append($directory1);
 
         $directory2.remove();
         $directory3.remove();
@@ -34,8 +36,8 @@ var $directory3 = $('<li>Connect</li><li>Profile</li><li>Options</li><li>Images<
     });
     $li2.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
-        $li2.toggleClass('active');
-        $ul2.append($directory2);
+        $li2.addClass('active');
+        $ol2.append($directory2);
 
         $directory1.remove();
         $directory3.remove();
@@ -46,8 +48,8 @@ var $directory3 = $('<li>Connect</li><li>Profile</li><li>Options</li><li>Images<
     });
     $li3.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
-        $li3.toggleClass('active');
-        $ul3.append($directory3);
+        $li3.addClass('active');
+        $ol3.append($directory3);
 
         $directory1.remove();
         $directory2.remove();
@@ -58,8 +60,8 @@ var $directory3 = $('<li>Connect</li><li>Profile</li><li>Options</li><li>Images<
     });
     $li4.on('click', function(evt){
       //this makes the <li>s prepend to only the first ul
-        $li4.toggleClass('active');
-        $ul4.append($directory4);
+        $li4.addClass('active');
+        $ol4.append();
 
         $directory1.remove();
         $directory2.remove();
